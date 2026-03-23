@@ -1,0 +1,13 @@
+Windows Registry Editor Version 5.00
+
+; VS Code - 폴더 배경 우클릭 메뉴 (폴더 안 빈 공간 우클릭)
+; 시스템 설치 경로: C:\Program Files\Microsoft VS Code
+; 사용자 설치라면 경로를 아래로 변경:
+;   C:\Users\<사용자명>\AppData\Local\Programs\Microsoft VS Code\Code.exe
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode]
+@="Open with VS Code"
+"Icon"="C:\\Program Files\\Microsoft VS Code\\Code.exe,0"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode\command]
+@="\"C:\\Program Files\\Microsoft VS Code\\Code.exe\" \"%V\""
